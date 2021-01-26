@@ -1,0 +1,186 @@
+
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Titre de la page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<!-- start -->
+    <title>Document</title>
+    <style>
+        .ctnp{
+            background-color:  #cda5f3;
+            border:3px solid black;
+            border-radius: 5px;
+            margin:10px;
+        }
+        .ctn{
+            background-color: #cda5f3;
+            border:2px solid black;
+            border-radius: 5px;
+        }
+        .ctntxt{
+            background-color: #cda5f3;
+        }
+        .pad5{
+            padding:5px;
+        }
+        .fwbd{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+
+
+<!-- exo 1 -->      
+        <section class="col col-md-12 padding:20px;margin-left:30px;">
+            <h2>I - Blocs positioning</h2>
+            <div class="row text-center ctnp">
+                <div class="col-12 col-md-12 pad5 ctntxt">12 colonnes</div>
+                <div class="col col-md-2 offset-md-1 ctn pad5">ho</div>
+                <div class="col col-md-3 offset-md-2 ctn pad5">hoo</div>
+                <div class="col col-md-2 offset-md-2 ctn pad5">hoo</div>
+            </div>
+        </section>
+
+
+<!-- exo 2 -->
+        <section>
+            <h2>II - Imbricated elements</h2>
+            <div class="row text-center" style="margin:10px;">
+                <div class="col col-md-4">
+                    <div class="row col col-md-12 ctn pad5">ok go</div>
+                </div>
+                <div class="col col-md-8 ctn">
+                    <div class="row text-center">
+                        <div class="col col-md-12 pad5 fwbd">Exercice</div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col col-md-3 ctn pad5">ho</div>
+                        <div class="col col-md-6 ctn pad5">hoo</div>
+                        <div class="col col-md-3 ctn pad5">hooo</div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col col-md-4 ctn pad5">hooo</div>
+                        <div class="col col-md-4 ctn pad5">hoooo</div>
+                        <div class="col col-md-4 ctn pad5">hooooo"<span class="fwbd">haaa</span>".</div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col col-md-5 ctn pad5">W</div>
+                        <div class="col col-md-2 ctn pad5">T</div>
+                        <div class="col col-md-5 ctn pad5">F</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+<!-- exo 3 -->
+        <section>
+            <h2>III - Change elements order</h2>
+            <div class="row text-center ctnp" style="margin:10px;">
+                <div class="row text-center">
+                    <div class="col-12 col-md-12 pad5 ctntxt">12 col</div>
+                </div>
+                <div class="row text-center d-flex justify-content-around flex-nowrap">
+                    <div class="col col-md-2 ctn pad5 order-1">Bloc 1 de 2</div>
+                    <div class="col col-md-2 ctn pad5 order-3">Bloc 2 de 2</div>
+                    <div class="col col-md-2 ctn pad5 order-2">Bloc 3 de 2</div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+<!-- exo 4 -->
+        <section>
+            <h2>IV - Pratice makes good</h2>
+            <div class="row text-center" style="margin:10px;">
+                <div class="col col-md-6 ctn">
+                    <div class="row text-center">
+                        <div class="col col-md-12 pad5 ctntxt">6 colonnes</div>
+                    </div> 
+                    <div class="row text-center d-flex justify-content-between">
+                        <div class="col col-md-4 pad5 ctn">4 colonnes</div>
+                        <div class="col col-md-4 pad5 ctn">4 colonnes</div>
+                    </div>                     
+                </div>
+                <div class="col col-md-6 ctn">
+                    <div class="row text-center">
+                        <div class="col-12 col-md-12 pad5 ctntxt">6 colonnes</div>
+                    </div>  
+                    <div class="row text-center">
+                        <div class="col col-md-4 pad5 ctn">4 colonnes</div>
+                        <div class="col col-md-8 pad5 ctn">8 colonnes</div>
+                    </div> 
+                </div>
+            </div>
+        </section>
+
+
+
+<!-- exo 5-->
+        <section>
+            <h2>V - Responsive layout...</h2>
+        </section>
+        <form method="post" action="aaa">
+            <div class="form-group">
+                <label for="my-input">Text</label>
+                <input id="my-input" class="form-control" type="text" name="">
+            </div>
+        </form>
+    </main>
+
+
+
+<!-- quelques tests avant exo -->
+    <footer>
+        <H1>test divers</H1>
+        <div class="jumbotron text-center">
+            <h1>Mieux que 12 col (jumbotron)</h1>
+            <p>petit titre</p>
+          </div>
+          <div class="container">
+            <div class="row">
+        
+        
+              <div class="col-sm-6 bg-warning row">
+                <!-- col1 -->
+              <div class="col-sm-6 bg-success rounded order-4 justify-content-start">
+                <h3>Col 1</h3>
+                <p>Lorem ipsum dolor..</p>
+              </div>
+                <!-- col2 -->
+              <div class="col-sm-6 bg-primary rounded order-3 justify-content-end">
+                <h3>Col 2</h3>
+                <p>Lorem ipsum dolor..</p>
+              </div>
+            </div>
+        
+        
+            <div class="col-sm-6 bg-warning row">
+                <!-- col3 -->
+              <div type="button" class="col-sm-6 bg-secondary rounded order-2justify-content-end">
+                <h3>Col 3</h3>
+                <p>Lorem ipsum dolor..</p>
+              </div>
+                <!-- col3 -->
+              <div type="button" class="col-sm-6 bg-danger rounded order-1 justify-content-start">
+                <h3>Col 4</h3>
+                <p>Lorem ipsum dolor..</p>
+              </div>
+            </div>
+
+
+    </footer>
+</body>
+</html>
